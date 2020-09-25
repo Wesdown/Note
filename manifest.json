@@ -1,0 +1,16 @@
+{
+  "background": {
+    "persistent": true,
+    "scripts": ["app/scripts/background.js"]
+  },
+  "description": "Note app",
+  "manifest_version": 2,
+  "name": "Note",
+  "permissions": [ 
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "webNavigation"
+  ],
+  "version": "1.0"
+}
