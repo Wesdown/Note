@@ -1,0 +1,50 @@
+:root {
+  --main-bg-color: #121212;
+  --primary-color: #ff9e22;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: sans-serif;
+  margin: 0; 
+  padding: 0;
+  min-width: 450px;
+  color: white;
+  border: none;
+}
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab button {
+  background-color: inherit;
+  display: inline-block;
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 3em;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Style the tab content */
+#tabcontent {
+  display: flex;
+  padding: 6px 12px;
+  border-top: none;
+}

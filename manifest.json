@@ -3,6 +3,9 @@
     "persistent": true,
     "scripts": ["app/scripts/background.js"]
   },
+  "browser_action": {
+    "default_popup": "app/popup.html"
+  },
   "description": "Note app",
   "manifest_version": 2,
   "name": "Note",
@@ -10,6 +13,7 @@
     "http://*/*",
     "https://*/*",
     "storage",
+    "tabs",
     "webNavigation"
   ],
   "version": "1.0"
